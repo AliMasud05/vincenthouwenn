@@ -1,19 +1,20 @@
 import CtaBanner from "@/components/home/cta-banner";
 import FeatureSection from "@/components/home/feature-section";
-import ProcessFlow from "@/components/home/process-flow";
 import RegistrationForm from "@/components/home/registration-form";
 import Image from "next/image";
 import Link from "next/link";
 import banner from '@/assets/banner.jpg'
+import { ProcessFlow } from "@/components/home/process-flow";
 
 const CommonLayoutHomePage = () => {
   return (
-    <div className=" mx-auto mt-8">
-       <div className=" mx-auto p-4 md:p-0">
+    <div className="bg-[#EEEEEE]/30 -mt-4">
+      <div className="container mx-auto mt-8 ">
+       <div className="p-4 md:p-0">
    
 
-      <div className="mt-12 grid md:grid-cols-2 gap-8 items-center">
-        <div>
+      <div className="mt-12 grid md:grid-cols-2 gap-8 ">
+        <div className="space-y-4 flex flex-col  justify-center">
           <h1 className="text-3xl font-bold text-gray-800 mb-6">Vind een hovenier in uw regio!</h1>
           <div className="space-y-4">
             <div>
@@ -50,10 +51,11 @@ const CommonLayoutHomePage = () => {
     </div>
       {/* <MultiStepForm /> */}
        <FeatureSection />
-      <ProcessFlow />
+      <ProcessFlow/>
       <CtaBanner />
       <RegistrationForm />
      
+    </div>
     </div>
   );
 };

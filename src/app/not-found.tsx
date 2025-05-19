@@ -1,9 +1,9 @@
-import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 import Image from "next/image";
 import errorPhoto from "@/assets/notfound.png";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import Footer from "@/components/shared/Footer";
 
 export default function NotFound() {
   return (
