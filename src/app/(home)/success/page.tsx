@@ -22,7 +22,7 @@ export default function SuccessPage() {
           <CheckIcon className="w-8 h-8 text-white" />
         </div>
         <h1 className="text-xl font-bold text-gray-800 mb-4">
-          Dank u wel voor uw aanvraag! We gaan direct voor u aan de slag en nemen zo snel mogelijk contact met u op.
+          Dank u wel voor uw aanvraag! Wij gaan direct voor u aan de slag en nemen zo snel mogelijk contact met u op.
         </h1>
         <Link
           href="/"
