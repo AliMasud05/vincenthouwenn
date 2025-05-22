@@ -1,14 +1,15 @@
 import Link from "next/link"
 import { Linkedin } from "lucide-react"
-import { Logo } from "../form/logo"
+import logoWithoutBg from '@/assets/logo/footer-logo.png'
+import Image from "next/image"
 
 const Footer = () => {
   return (
-    <footer className="bg-green-600 text-white">
+    <footer className="bg-[#2E7D32] text-white">
       <div className="container mx-auto p-6 md:p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
           <div>
-            <Logo variant="white" />
+           <Image src={logoWithoutBg.src} alt="logo" width={200} height={250}  className="bg-transparent"/>
           </div>
 
          <div className="flex justify-end gap-6">

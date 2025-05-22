@@ -44,7 +44,7 @@ function FeatureCard({
 }) {
   return (
     <div className="flex flex-col shadow-sm py-3 px-4 rounded-md bg-white">
-      <div className="w-16 h-16 bg-green-100 rounded-md flex items-center justify-center mb-4">{icon}</div>
+      <div className="w-16 h-16 bg-[#5e9c61] rounded-md flex items-center justify-center mb-4">{icon}</div>
       <h3 className="text-lg font-medium mb-2">{title}</h3>
       <p className="text-gray-600 text-base leading-6">{description}</p>
     </div>

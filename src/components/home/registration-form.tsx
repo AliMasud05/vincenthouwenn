@@ -115,7 +115,7 @@ export default function RegistrationForm() {
           <div className="md:col-span-2 mt-4 w-[300px] mx-auto">
             <button
               type="submit"
-              className="w-full bg-green-600 text-white py-3 rounded-md font-medium hover:bg-green-700 transition-colors"
+              className="w-full bg-[#2E7D32] text-white py-3 rounded-md font-medium hover:bg-green-700 transition-colors cursor-pointer text-lg"
             >
               Registreren
             </button>

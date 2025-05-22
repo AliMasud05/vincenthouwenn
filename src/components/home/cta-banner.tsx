@@ -5,7 +5,7 @@ export default function CtaBanner() {
   return (
     <section className="py-10 px-4">
       <div className=" mx-auto">
-        <div className="bg-green-700 text-white rounded-lg p-8 md:p-12">
+        <div className="bg-[#2E7D32] text-white rounded-lg p-8 md:p-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="md:mb-0">
               <h2 className="text-xl md:text-2xl font-semibold ">

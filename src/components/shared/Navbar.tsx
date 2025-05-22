@@ -1,5 +1,7 @@
 "use client";
 
+import logoWithBg from '@/assets/logo/navbar-white.jpg';
+import Image from "next/image";
 import Link from "next/link";
 
 
@@ -15,10 +17,11 @@ export default function Navbar() {
       <div className="my-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
         <div className="flex items-center gap-2 pb-4">
-          <div className="h-10 w-10 bg-orange-500 rounded-md flex items-center justify-center text-white font-bold text-xl">
+          <Image src={logoWithBg.src} alt="logo" width={200} height={200} />
+          {/* <div className="h-10 w-10 bg-orange-500 rounded-md flex items-center justify-center text-white font-bold text-xl">
             H
           </div>
-          <h1 className="text-xl font-medium">Hovenierslokaal</h1>
+          <h1 className="text-xl font-medium">Hovenierslokaal</h1> */}
         </div>
         </Link>
         <div className="flex items-center gap-2">
