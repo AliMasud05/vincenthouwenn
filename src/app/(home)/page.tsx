@@ -46,7 +46,7 @@ const CommonLayoutHomePage = () => {
                 </div>
                 <button
                   onClick={handleSubmit}
-                  className="inline-flex items-center bg-[#2E7D32] text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors"
+                  className="inline-flex items-center bg-[#2E7D32] text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors cursor-pointer" 
                 >
                   Volgende <span className="ml-2">→</span>
                 </button>
