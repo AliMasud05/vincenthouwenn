@@ -75,13 +75,13 @@ export function ContactForm({ formData, updateFormData, onSubmit, onPrevious }: 
         <button
           type="button"
           onClick={onPrevious}
-          className="inline-flex items-center border border-gray-300 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-50 transition-colors"
+          className="inline-flex items-center border border-gray-300 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-50 transition-colors cursor-pointer"
         >
           <span className="mr-2">←</span> Vorige
         </button>
         <button
           type="submit"
-          className="inline-flex items-center bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors"
+          className="inline-flex items-center bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors cursor-pointer"
         >
           Verstuur <span className="ml-2">→</span>
         </button>

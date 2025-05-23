@@ -4,7 +4,7 @@ import img1 from '@/assets/process/img1.png'
 import img3 from '@/assets/process/img3.png'
 import img4 from '@/assets/process/img4.png'
 import img5 from '@/assets/process/img5.png'
-import img6 from '@/assets/process/img6.png'
+import img6 from '@/assets/exhibition.png'
 import img7 from '@/assets/process/img7.png'
 import { MoveRight } from "lucide-react"
 import Image from "next/image"
@@ -24,42 +24,39 @@ export function ProcessFlow() {
     {
       icon: <Image src={img1} alt="bevestiging" width={70} height={70} className="text-gray-700" />,
       title: "Bevestiging",
-      details:
-        "Wij bevestigen je aanvraag en nemen contact op voor vragen en advies.",
+      details: "Wij bevestigen je aanvraag en nemen contact op voor vragen en advies.",
       row: 1,
     },
     {
       icon: <Image src={img3} alt="hoverenier zoeken" width={70} height={70} className="text-gray-700" />,
       title: "Hovenier zoeken",
-      details: "Op basis van jouw wensen selecteren wij de meest geschikte hovenier uit onze regio.",
+      details: "Op basis van jouw wensen selecteren wij de meest geschikte hovenier uit uw regio.",
       row: 1,
     },
     {
       icon: <Image src={img4} alt="match bevestigen" width={70} height={70} className="text-gray-700" />,
       title: "Match bevestigen",
-      details:
-        "Je ontvangt een offerte van de geselecteerde hovenier en kunt deze rustig bekijken.",
+      details: "Je ontvangt een offerte van de geselecteerde hovenier en kunt deze rustig bekijken.",
       row: 1,
     },
     // Second row (3 steps)
     {
       icon: <Image src={img5} alt="aanbetaling" width={70} height={70} className="text-gray-700" />,
       title: "Aanbetaling",
-      details:
-        "Is het werk afgerond en ben je tevreden? Dan rond je de betaling af en sluiten we het project samen af.",
+      details: "Als je akkoord gaat, betaal je een aanbetaling om de opdracht te bevestigen.",
       row: 2,
     },
     {
+      // icon: <Image src={img6} alt="planning" width={70} height={70} className="text-gray-700" />,
       icon: <Image src={img6} alt="planning" width={70} height={70} className="text-gray-700" />,
-      title: "Planning",
-      details:
-        "De hovenier start met het werk op de afgesproken datum.",
+      title: "uitvoering",
+      details: "De hovenier start met het werk op de afgesproken datum.",
       row: 2,
     },
     {
       icon: <Image src={img7} alt="uitvoering" width={70} height={70} className="text-gray-700" />,
-      title: "Uitvoering",
-      details: "Is het werk afgerond en ben je tevreden? Dan rond je de betaling af en sluiten we het project samen af..",
+      title: "Oplevering & Eindbetaling ",
+      details: "Is het werk afgerond en ben je tevreden? Dan rond je de betaling af en sluiten we het project samen af.",
       row: 2,
     },
   ]
@@ -109,6 +106,7 @@ export function ProcessFlow() {
     <section className="py-16 bg-gray-50">
       <div className="mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-12">Hoe werkt het?</h2>
+        
 
         {/* Desktop view with two rows */}
         <div className="hidden md:block relative">
@@ -148,17 +146,17 @@ export function ProcessFlow() {
               <p className="text-sm text-center font-medium">{step.title}</p>
 
               {/* Down arrow for mobile (except after the last step) */}
-              {index < steps.length - 3 && (
+              {index < steps.length - 1 && (
                 <div className="mt-4">
                   <svg
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
-                    className="text-gray-400 transform rotate-90"
+                    className="text-gray-400"
                   >
                     <path
-                      d="M5 12H19M19 12L12 5M19 12L12 19"
+                      d="M12 5V19M12 19L19 12M12 19L5 12"
                       stroke="currentColor"
                       strokeWidth="2"
                       strokeLinecap="round"

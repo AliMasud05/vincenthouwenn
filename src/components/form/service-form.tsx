@@ -72,7 +72,7 @@ export function ServiceForm({ formData, updateFormData, onNext, onPrevious }: Se
       <div className="flex justify-between">
         <button
           onClick={onPrevious}
-          className="inline-flex items-center border border-gray-300 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-50 transition-colors"
+          className="inline-flex items-center border border-gray-300 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-50 transition-colors cursor-pointer"
         >
           <span className="mr-2">←</span> Vorige
         </button>
@@ -81,8 +81,8 @@ export function ServiceForm({ formData, updateFormData, onNext, onPrevious }: Se
           disabled={formData.service === "other" && !formData.customService}
           className={`inline-flex items-center px-6 py-2 rounded-md transition-colors ${
             formData.service === "other" && !formData.customService
-              ? "bg-gray-300 cursor-not-allowed"
-              : "bg-green-600 text-white hover:bg-green-700"
+              ? "bg-gray-300 cursor-not-allowed "
+              : "bg-green-600 text-white hover:bg-green-700 cursor-pointer"
           }`}
         >
           Volgende <span className="ml-2">→</span>

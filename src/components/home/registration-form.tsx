@@ -27,8 +27,8 @@ export default function RegistrationForm() {
     console.log('Form submitted:', formData);
     
     // Show success toast
-    toast.success('Registration successful!', {
-      description: 'Your company has been registered.',
+    toast.success('Registratie compleet!', {
+      description: 'Uw bedrijf is geregistreerd',
       duration: 5000,
     });
 
@@ -112,7 +112,7 @@ export default function RegistrationForm() {
             />
           </div>
 
-          <div className="md:col-span-2 mt-4 w-[300px] mx-auto">
+          <div className="md:col-span-2 mt-4 w-full md:w-[300px] mx-auto">
             <button
               type="submit"
               className="w-full bg-[#2E7D32] text-white py-3 rounded-md font-medium hover:bg-green-700 transition-colors cursor-pointer text-lg"

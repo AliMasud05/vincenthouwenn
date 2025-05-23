@@ -1,8 +1,7 @@
 "use client"
 
-import { useEffect } from "react"
-import Link from "next/link"
 import { CheckIcon } from "lucide-react"
+import { useEffect } from "react"
 
 export default function SuccessPage() {
   useEffect(() => {
@@ -24,12 +23,12 @@ export default function SuccessPage() {
         <h1 className="text-xl font-bold text-gray-800 mb-4">
           Dank u wel voor uw aanvraag! Wij gaan direct voor u aan de slag en nemen zo snel mogelijk contact met u op.
         </h1>
-        <Link
+        {/* <Link
           href="/"
           className="inline-flex items-center bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors mt-6"
         >
           Terug naar home
-        </Link>
+        </Link> */}
       </div>
     </div>
   )

@@ -83,7 +83,7 @@ export function AddressForm({ formData, updateFormData, onNext }: AddressFormPro
       <div className="flex justify-end">
         <button
           type="submit"
-          className="inline-flex items-center bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors"
+          className="inline-flex items-center bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors cursor-pointer"
         >
           Volgende <span className="ml-2">→</span>
         </button>

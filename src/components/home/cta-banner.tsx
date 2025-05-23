@@ -11,14 +11,14 @@ export default function CtaBanner() {
               <h2 className="text-xl md:text-2xl font-semibold ">
                 Start vandaag nog met jouw droomtuin 
                 <br />
-                B— vraag direct een offerte aan!
+              - vraag direct een offerte aan!
               </h2>
              
             </div>
             <div className="flex flex-col md:flex-row justify-between items-center">
               <Image src={arrow.src} alt="droomtuin" width={1000} height={1000} className="hidden md:flex h-36 w-72 mt-10" />
             <button className="bg-white text-gray-800 px-6 py-2 rounded-md font-medium mt-4 md:mt-0 hover:bg-gray-100 transition-colors">
-              Get Started with Flap Now
+              gratis offerte
             </button>
             </div>
           </div>

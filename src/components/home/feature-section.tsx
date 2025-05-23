@@ -5,27 +5,32 @@ export default function FeatureSection() {
   return (
     <section className="py-16">
       <div className=" mx-auto">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-2">Why Hovenierslokal?</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-2"> Waarom Hovenierslokaal?</h2>
         <div className="w-full max-w-md mx-auto h-px bg-gray-200 mb-12"></div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <FeatureCard
             icon={<User className="h-6 w-6 text-gray-700" />}
             title="Persoonlijke selectie"
-            description="Nadat wij een match hebben gevonden, ontvang je vooraf van de hovenier een offerte op maat. Zo weet je precies waar je aan toe bent."
+            description="Elke aanvraag wordt bij ons met de hand bekeken. We luisteren naar jouw wensen en 
+selecteren de hovenier die daar écht bij past. Geen automatische matches, maar 
+persoonlijke aandacht voor jouw project. "
           />
 
           <FeatureCard
             icon={<Sliders className="h-6 w-6 text-gray-700" />}
             title="Offerte op maat"
-            description="Offerte op maat
-Nadat wij een match hebben gevonden, ontvang je vooraf van de hovenier een offerte op maat. Zo weet je precies waar je aan toe bent."
+            description="Nadat wij een match hebben gevonden, ontvang je vooraf van de hovenier een offerte op 
+maat. Zo weet je precies waar je aan toe bent. 
+"
           />
 
           <FeatureCard
             icon={<PuzzlePiece className="h-6 w-6 text-gray-700" />}
             title="Eenvoudig & Betrouwbaar"
-            description="Nadat wij een match hebben gevonden, ontvang je vooraf van de hovenier een offerte op maat. Zo weet je precies waar je aan toe bent."
+            description="Bij ons hoef je niet te vergelijken of te zoeken. Jij doet één aanvraag, wij regelen de rest — 
+van het vinden van een passende hovenier tot de start van je project. Geen keuzestress, 
+geen gedoe, gewoon een goede vakman die past bij jouw aanvraag. "
           />
         </div>
       </div>

@@ -43,13 +43,13 @@ export function DesignForm({ formData, updateFormData, onNext, onPrevious }: Des
       <div className="flex justify-between">
         <button
           onClick={onPrevious}
-          className="inline-flex items-center border border-gray-300 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-50 transition-colors"
+          className="inline-flex items-center border border-gray-300 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-50 transition-colors cursor-pointer"
         >
           <span className="mr-2">←</span> Vorige
         </button>
         <button
           onClick={onNext}
-          className="inline-flex items-center bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors"
+          className="inline-flex items-center bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors cursor-pointer"
         >
           Volgende <span className="ml-2">→</span>
         </button>
