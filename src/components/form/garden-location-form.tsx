@@ -62,7 +62,7 @@ export function GardenLocationForm({ formData, updateFormData, onNext, onPreviou
               value={formData.customGardenLocation || ""}
               onChange={(e) => updateFormData({ customGardenLocation: e.target.value })}
               className="w-full p-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
-              placeholder="Bijvoorbeeld: Dak, balkon, etc."
+              placeholder=""
             />
           </div>
         )}

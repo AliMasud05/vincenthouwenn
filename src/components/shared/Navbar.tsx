@@ -6,15 +6,27 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
   const isMinimalNavbar = pathname === '/form' || pathname === '/success';
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleScrollToRegistration = () => {
+    if (pathname !== '/') {
+      router.push('/#registration');
+    } else {
+      const element = document.getElementById('registration');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   };
 
   return (
@@ -33,7 +45,12 @@ export default function Navbar() {
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center gap-6">
                 <div className="flex items-center gap-4">
-                  <span className="text-base text-gray-600">voor bedrijven</span>
+                  <button 
+                    onClick={handleScrollToRegistration}
+                    className="text-base text-gray-600 hover:text-gray-900 cursor-pointer"
+                  >
+                    voor bedrijven
+                  </button>
                   <Link href="/form">
                     <button className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-colors">
                       Gratis offerte
@@ -79,7 +96,15 @@ export default function Navbar() {
                     transition={{ duration: 0.2 }}
                     className="flex flex-col items-end gap-4 pt-2"
                   >
-                    <span className="text-base text-gray-600">voor bedrijven</span>
+                    <button 
+                      onClick={() => {
+                        handleScrollToRegistration();
+                        toggleMenu();
+                      }}
+                      className="text-base text-gray-600 hover:text-gray-900 cursor-pointer"
+                    >
+                      voor bedrijven
+                    </button>
                     <Link href="/form" onClick={toggleMenu}>
                       <button className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-colors w-full">
                         Gratis offerte

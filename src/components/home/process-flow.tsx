@@ -105,7 +105,7 @@ export function ProcessFlow() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-12">Hoe werkt het?</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-10">Hoe werkt het?</h2>
         
 
         {/* Desktop view with two rows */}

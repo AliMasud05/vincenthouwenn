@@ -44,7 +44,7 @@ export default function RegistrationForm() {
   return (
     <section className="py-16 px-4">
       <div className="mx-auto">
-        <h2 className="text-2xl md:text-4xl text-[#222222] text-center mb-4">Registreer jouw bedrijf</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-2">Registreer jouw bedrijf</h2>
         <div className="flex flex-col items-center justify-center">
           <Image src={rectangle} alt="second" width={400} height={100} />
         </div>

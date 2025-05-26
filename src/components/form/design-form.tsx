@@ -13,14 +13,14 @@ interface DesignFormProps {
 
 export function DesignForm({ formData, updateFormData, onNext, onPrevious }: DesignFormProps) {
   const options = [
-    { id: "yes", label: "Ja, ik heb ontwerpktekeningen" },
-    { id: "no", label: "Nee, ik heb geen ontwerpktekeningen" },
+    { id: "yes", label: "Ja, ik heb ontwerptekeningen" },
+    { id: "no", label: "Nee, ik heb geen ontwerptekeningen" },
   ]
 
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-lg font-medium mb-4">Heeft u ontwerpktekeningen?</h2>
+        <h2 className="text-lg font-medium mb-4">Heeft u ontwerptekeningen?</h2>
         <div className="space-y-3">
           {options.map((option) => (
             <label

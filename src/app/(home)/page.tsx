@@ -66,7 +66,9 @@ const CommonLayoutHomePage = () => {
         <FeatureSection />
         <ProcessFlow />
         <CtaBanner />
-        <RegistrationForm />
+      <div id="registration">
+  <RegistrationForm />
+</div>
       </div>
     </div>
   );

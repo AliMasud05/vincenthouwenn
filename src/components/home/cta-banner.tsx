@@ -1,5 +1,6 @@
 import Image from "next/image";
 import arrow from '@/assets/fi_13467811.png'
+import Link from "next/link";
 
 export default function CtaBanner() {
   return (
@@ -17,9 +18,11 @@ export default function CtaBanner() {
             </div>
             <div className="flex flex-col md:flex-row justify-between items-center">
               <Image src={arrow.src} alt="droomtuin" width={1000} height={1000} className="hidden md:flex h-36 w-72 mt-10" />
+            <Link href="/form">
             <button className="bg-white text-gray-800 px-6 py-2 rounded-md font-medium mt-4 md:mt-0 hover:bg-gray-100 transition-colors">
               gratis offerte
             </button>
+            </Link>
             </div>
           </div>
         </div>
